@@ -1,6 +1,6 @@
 FROM tomcat:8.5.70-jdk8-adoptopenjdk-openj9
 LABEL org.opencontainers.image.authors="behlp@objectcomputing.com"
-RUN apt-get update
+RUN apt-get update && apt-get install -y vim
 RUN useradd -ms /bin/bash grails
 
 USER root

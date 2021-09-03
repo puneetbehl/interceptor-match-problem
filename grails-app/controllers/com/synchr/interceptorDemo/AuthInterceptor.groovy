@@ -16,9 +16,11 @@ class AuthInterceptor {
 
     boolean before() {
         println "Executing before ..."
+        return true
     }
 
     boolean after() {
+        return true
     }
 
     void afterView() {
