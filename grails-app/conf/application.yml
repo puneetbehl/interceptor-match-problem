@@ -25,6 +25,9 @@ endpoints:
         enabled: true
 server:
     contextPath: /synchr
+    error:
+        whitelabel:
+            enabled: false
 ---
 grails:
     mime:
